@@ -22,4 +22,4 @@ Activity 或 Fragment 调用。在电话 Fragment 中依旧使用抽象工厂模式绑定控
 
 ### 展示
 ![pic1](https://github.com/Ryzin/PhoneAndMessage/raw/master/imgs/pic1.jpg)
-![pic2](https://github.com/Ryzin/PhoneAndMessage/raw/master/imgs/pic1.jpg)
+![pic2](https://github.com/Ryzin/PhoneAndMessage/raw/master/imgs/pic2.jpg)
