@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--更改底部导航栏点击颜色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/colorButtonPhoneBackground" android:state_checked="true" /><!--点击显示-->
+    <item android:color="@color/colorButtonNumText" android:state_checked="false" /><!--默认显示-->
+</selector>

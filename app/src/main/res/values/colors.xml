@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fcfcfc</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBg">#ffffff</color>
+    <color name="colorButtonNumText">#666666</color>
+    <color name="colorButtonNumBackground">#f4f4f4</color>
+    <color name="colorButtonNumBorder">#e1e1e1</color>
+    <color name="colorButtonNumPressed">#c3c3c3</color>
+    <color name="colorLightWhite">#EEE9E9</color>
+    <color name="colorButtonPhoneBackground">#55a37b</color>
+    <color name="colorButtonChat">#1296db</color>
+</resources>

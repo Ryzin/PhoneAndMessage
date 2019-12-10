@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval" android:useLevel="true">
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/colorButtonChat" />
+            <size
+                android:width="40dp"
+                android:height="40dp"
+                />
+        </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/ic_action_send"
+        android:height="25dp"
+        android:width="25dp"
+        android:gravity="center">
+    </item>
+</layer-list >

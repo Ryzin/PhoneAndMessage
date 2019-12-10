@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--标题栏底色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorButtonPhoneBackground</item>
+        <!--亮色状态栏，则会使用黑色图标-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="MessageActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--标题栏底色-->
+        <item name="colorPrimary">@color/colorButtonChat</item>
+        <item name="colorPrimaryDark">@color/colorButtonChat</item>
+        <item name="colorAccent">@color/colorButtonNumText</item>
+        <!--使用白色图标-->
+        <item name="android:windowLightStatusBar">false</item>
+        <!--沉浸式状态栏-->
+        <!--<item name="android:clipToPadding">true</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+    </style>
+
+
+    <!--activity 淡入淡出-->
+    <style name="AnimActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="anim_fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_fade_out</item>
+    </style>
+
+    <!-- 按钮主题 作为parent style用于继承-->
+    <style name="ButtonTheme">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:stateListAnimator">@null</item><!--阴影-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+
+    </style>
+
+    <!-- 数字按钮主题 -->
+    <style name="ButtonNumTheme" parent="ButtonTheme">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textColor">@color/colorButtonNumText</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="f1_img_btn_style" parent="ButtonTheme">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="msg_img_btn_style" parent="ButtonTheme">
+    </style>
+
+    <style name="bubble_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">10dp</item>
+    </style>
+</resources>

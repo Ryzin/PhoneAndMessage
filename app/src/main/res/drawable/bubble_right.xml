@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!--原来的需求区域-->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--填充色-->
+            <solid android:color="@color/colorButtonChat"/>
+            <!--圆角角度-->
+            <corners android:radius="20dp"/>
+
+        </shape>
+    </item>
+</layer-list>

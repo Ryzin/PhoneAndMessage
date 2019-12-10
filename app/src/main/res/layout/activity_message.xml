@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:hint="@string/hint_receiver"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorButtonNumText">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chatList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/editText_msg"
+                android:background="@drawable/edit_text_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:ems="1"
+                android:hint="@string/hint_msg"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:minLines="1"
+                android:gravity="top"
+                android:selectAllOnFocus="true"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorButtonNumText">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6">
+            <ImageButton
+                android:id="@+id/btn_msg_send"
+                style="@style/msg_img_btn_style"
+                android:src="@drawable/button_send_msg" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
